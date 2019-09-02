@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="name" id="myText" name="fname" placeholder="hoe heet je?" value=""><br>
+
+    <button onclick="myFunction()">Try it</button>
+
+
+
+    <p id="demo">demo</p>
+    <p id="demo2">demo2</p>
+
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+
+            document.getElementById("demo").innerHTML = fruits;
+            fruits.push(x);
+
+            document.getElementById("demo2").innerHTML = fruits;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
